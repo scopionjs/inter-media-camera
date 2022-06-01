@@ -1,0 +1,181 @@
+body{
+    background-color: rgb(36, 35, 35);
+   overflow: hidden;
+}
+h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 40px;
+    text-transform: capitalize;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.frame{
+    width: 100%;
+    height: 30px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: right;
+    
+   
+}
+.minimize{
+height:100% ;
+width: 40px;
+    
+    cursor: pointer;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.close{
+    height: 100%;
+    width: 40px;
+   
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.minimize div{
+height: 6%;
+width: 60%;
+margin-inline: 25%;
+margin-block: 40%;
+background-color: white;
+}
+.close div:nth-child(1){
+    height: 6%;
+    width: 60%;
+    background-color: white;
+    transform: rotateZ(40deg);
+    position: absolute;
+}
+.close div:nth-child(2){
+    height: 6%;
+    width: 60%;
+    background-color: white;
+    transform: rotateZ(-40deg);
+    position: absolute;
+}
+.close:hover{
+    background-color: rgb(211, 48, 48);
+}
+.minimize:hover{
+    background-color: rgb(117, 117, 234);
+}
+.options{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    
+}
+.options .opt1 {
+height: 150px;
+width: 200px;
+background:linear-gradient( 40deg ,rgb(7, 7, 44) 0%,rgb(88, 88, 155) 50%,rgb(18, 18, 48) 100%);
+border-top-left-radius: 15px;
+border-bottom-right-radius: 15px;
+text-decoration: none;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+transition-duration: .8s;
+animation-name:change_bg ;
+animation-duration: 9s;
+animation-iteration-count: infinite;
+animation-delay: 0s;
+}
+@keyframes change_bg {
+    0%{
+        background: linear-gradient( 40deg ,rgb(117, 117, 234) 0%,rgb(20, 20, 71) 50%,rgb(69, 69, 119) 100%);
+    }
+    50%{
+        background: linear-gradient( 90deg ,rgb(117, 117, 234) 0%,rgb(20, 20, 71) 50%,rgb(69, 69, 119) 100%);
+    }
+    70%{
+        background: linear-gradient( 180deg ,rgb(117, 117, 234) 0%,rgb(20, 20, 71) 50%,rgb(69, 69, 119) 100%);
+    }
+    100%{
+        background: linear-gradient( 360deg ,rgb(117, 117, 234) 0%,rgb(20, 20, 71) 50%,rgb(69, 69, 119) 100%);
+    }
+}
+.options .opt1:hover{
+
+  opacity: 0.5;
+  transform: translateY(-20px);
+}
+
+.options .opt1 img{
+    width: 50%;
+    margin-inline:auto;
+    height:60% ;
+    
+}
+.options .opt1 h3{
+color: rgba(243, 238, 229,0.9);
+text-align: center;
+text-transform: capitalize;
+font-family: sans-serif;
+}
+.options .opt2 {
+    height: 150px;
+width: 200px;
+background:linear-gradient( 170deg ,rgb(7, 7, 44) 0%,rgb(88, 88, 155) 50%,rgb(18, 18, 48) 100%);
+border-top-right-radius: 15px;
+border-bottom-left-radius: 15px;
+text-decoration: none;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+transition: .8s all;
+animation-name:change_bg ;
+animation-direction: reverse;
+animation-duration: 9s;
+animation-iteration-count: infinite;
+animation-delay: 0s;
+    }
+    .options .opt2:hover{
+        opacity: 0.5;
+        transform: translateY(-17px);
+      }
+    .options .opt2 img{
+        width: 50%;
+        margin-inline:auto;
+        height:60% ;
+        
+    }
+.options .opt2 h3{
+color: rgba(243, 238, 229,0.9);
+text-align: center;
+text-transform: capitalize;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer p{
+color: antiquewhite;
+font-family: sans-serif;
+font-style: italic;
+font-weight: lighter;
+font-size: 10px;
+}
+footer p span{
+    font-weight: bolder;
+    color:rgb(117, 117, 234) ;
+    text-transform: uppercase;
+}

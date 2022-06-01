@@ -1,0 +1,153 @@
+body{
+    overflow: hidden;
+}
+.bar-wrapper{
+    display: flex;
+    height: 30px;
+    position: sticky;
+    top: 0;
+}
+.frame{flex:10;
+    display: flex;
+    justify-content: right;
+    z-index: 99999999;
+   
+}
+.back{
+    flex: 1;
+    
+    z-index: 999;
+height:30px ;
+width: 50px;
+background-color: transparent;
+border-top-left-radius: 30px;
+border-bottom-left-radius: 30px;
+display: flex;
+justify-content: left;
+align-items: center;
+text-decoration: none;
+border: none;
+
+}
+.back img{
+width: 40px;
+height: 25px;
+}
+.minimize{
+height:100% ;
+width: 40px;
+    
+    cursor: pointer;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.close{
+    height: 100%;
+    width: 40px;
+   
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.minimize div{
+height: 6%;
+width: 60%;
+margin-inline: 25%;
+margin-block: 40%;
+background-color: white;
+}
+.close div:nth-child(1){
+    height: 6%;
+    width: 60%;
+    background-color: white;
+    transform: rotateZ(40deg);
+    position: absolute;
+}
+.close div:nth-child(2){
+    height: 6%;
+    width: 60%;
+    background-color: white;
+    transform: rotateZ(-40deg);
+    position: absolute;
+}
+.close:hover{
+    background-color: rgb(211, 48, 48);
+}
+.minimize:hover{
+    background-color: rgb(117, 117, 234);
+}
+.vid-wrapper{
+position: relative;
+width: 100%;
+height: calc(100vh - 30px);
+}
+.vid-wrapper video{
+    width: 100%;
+height: 100%;
+}
+.vid-wrapper .btns{
+position: absolute;
+bottom: 12px;
+display: flex;
+justify-content: center;
+width: 100%;
+
+}
+.vid-wrapper .btns button {
+    border: none;
+    height:70px ;
+    width: 70px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    border: 3px rgb(117, 117, 234) solid;
+    padding: 5px;
+}
+.vid-wrapper .btns button img{
+width: 100%;
+height:100% ;
+border-radius: 36%;
+
+}
+.btns2{
+    display: none;
+position: absolute;
+top: 15px;
+left:10px ;
+border: none;
+height:40px ;
+width: 40px;
+cursor: pointer;
+border-radius: 50%;
+background-color: rgb(255, 255, 255);
+border: 3px rgb(117, 117, 234) solid;
+padding: 5px;
+}
+.btns2 img{
+    width: 100%;
+    height:100% ;
+}
+.vid-wrapper img.captured{
+    position: absolute;
+    bottom: 20px;
+    left: 5px;
+    width: 100px;
+    height:100px ;
+    border-radius: 50%;
+    border: 4px rgb(117, 117, 234) dotted;
+    visibility: hidden;
+}
+.vid-wrapper img.captured-visible{
+    position: absolute;
+    bottom: 20px;
+    left: 5px;
+    width: 100px;
+    height:100px ;
+    border-radius: 50%;
+    border: 4px rgb(166, 166, 255) dotted;
+    visibility: visible;
+}

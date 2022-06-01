@@ -1,0 +1,45 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\siame\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add electron-builder --dev
+
+PATH: 
+  E:\electron\node_modules\.bin;E:\node_modules\.bin;C:\Users\siame\AppData\Roaming\npm\node_modules\npm\node_modules\@npmcli\run-script\lib\node-gyp-bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;;C:\Users\siame\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\siame\AppData\Roaming\npm
+
+Yarn version: 
+  1.22.18
+
+Node version: 
+  16.14.2
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: 3628:error:1408F119:SSL routines:ssl3_get_record:decryption failed or bad record mac:c:\ws\deps\openssl\openssl\ssl\record\ssl3_record.c:677:
+
+npm manifest: 
+  {
+    "name": "uni-finder",
+    "version": "1.0.0",
+    "productName": "uni-finder app",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "electron ."
+    },
+    "author": "sia",
+    "license": "ISC",
+    "devDependencies": {
+      "electron": "^18.0.2",
+      "electron-packager": "^15.5.1"
+    },
+    "dependencies": {
+      "ffmpeg": "^0.0.4",
+      "fluent-ffmpeg": "^2.1.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

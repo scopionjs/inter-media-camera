@@ -1,0 +1,20 @@
+{
+  "name": "inter-media camera",
+  "version": "1.1.0",
+  "productName": "inter-media camera",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "electron ."
+  },
+  "author": "sia",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^18.0.2",
+    "electron-packager": "^15.5.1"
+  },
+  "dependencies": {
+    "ffmpeg": "^0.0.4",
+    "fluent-ffmpeg": "^2.1.2"
+  }
+}
